@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  backend:
+    # restart: always
+    # container_name: django
+    build:
+      context: ./django-backend/api
+      dockerfile: Dockerfile.dev        
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./django-backend/api:/app
+  react:
+    # restart: always
+    # container_name: react
+    command: /bin/bash run.sh
+    environment:
+      HOST: 0.0.0.0
+      NODE_ENV: development
+    image: node:lts-bullseye
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./react-frontend:/app
+    working_dir: /app
