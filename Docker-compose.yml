@@ -2,7 +2,7 @@ version: '3.7'
 services:
   backend:
     # restart: always
-    # container_name: django
+    container_name: django
     build:
       context: ./django-backend/api
       dockerfile: Dockerfile.dev        
@@ -12,7 +12,7 @@ services:
       - ./django-backend/api:/app
   react:
     # restart: always
-    # container_name: react
+    container_name: react
     command: /bin/bash run.sh
     environment:
       HOST: 0.0.0.0
