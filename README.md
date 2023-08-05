@@ -3,7 +3,7 @@ This was created to save some time on projects.
 
 has django_backend/api folder with backend_project (the project) and backent_rest (the app)
 cors installed
-C simple api that displays the time on main page to see it is all working. 
+A simple api that displays the time on main page to see it is all working. 
 includes dockerfiles and docker-compose
 uses sqlite3
 run:
