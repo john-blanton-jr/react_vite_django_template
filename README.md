@@ -1,15 +1,3 @@
-Boilerplate/template for Django/React using Vite Javascript + SWC
-This was created to save some time on projects.
-
-has django_backend/api folder with backend_project (the project) and backent_rest (the app)
-cors installed
-A simple api that displays the time on main page to see it is all working. 
-includes dockerfiles and docker-compose
-uses sqlite3
-run:
-docker compose build
-docker compose up
-
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
@@ -87,7 +75,14 @@ docker compose up
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
+has django_backend/api folder with backend_project (the project) and backent_rest (the app)
+cors installed
+A simple api that displays the time on main page to see it is all working. 
+includes dockerfiles and docker-compose
+uses sqlite3
+run:
+docker compose build
+docker compose up
 
 
 <!-- ABOUT THE PROJECT -->
@@ -96,16 +91,23 @@ docker compose up
 ![react vite django files screenshot](/images/reactvitedjangofiles.png "Image Title")
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Boilerplate using Docker Compose.
+React using vite
+Javascript + SWC
+CORS installed
+Dockerfile.dev (Backend)
+Dockerfile (Frontend)
+Docker-compose.yml
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Uses sqlite3 but can easily be changed to your Database of choosealicense
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Includes a simple api that displays the time on main page to see it is all working.
 
-Use the `BLANK_README.md` to get started.
+Why did I create this:
+* Spend more time building your projects and not have to worry about initial setup
+* Instead of doing the same steps over and over its easy to use a boilerplate
+
+May not satisfy all of your initial needs but the boilerplate can be adapted to your project.  Feel free to fork the project and adapt it to use in your one library.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,16 +115,12 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+* ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+* ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,33 +129,26 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Fork and clone repository
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Install Docker
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://gitlab.com/johnbjr76/react_vite_django_template.git
    ```
-3. Install NPM packages
+3. Build the Docker images
    ```sh
-   npm install
+   docker-compose build
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Start the Docker containers
+   ```sh
+   docker-compose up
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -167,9 +158,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Use as a starter for your next project. The Django project folder is named django_project. The Django app folder is named backend_rest. Both are found in the api folder in the mande Django folder django-backend.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -178,15 +167,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Add bootstrap
+- [ ] Add JWT Authentication
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+See the [open issues](https://gitlab.com/johnbjr76/react_vite_django_template/-/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,27 +207,18 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+John Blanton - hello@johnblanton.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://gitlab.com/johnbjr76/react_vite_django_template](https://gitlab.com/johnbjr76/react_vite_django_template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+* [Markdown Badges](https://github.com/Ileriayo/markdown-badges)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
