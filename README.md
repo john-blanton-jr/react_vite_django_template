@@ -88,8 +88,6 @@ docker compose up
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![react vite django files screenshot](/images/reactvitedjangofiles.png "Image Title")
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 Boilerplate using Docker Compose.
 React using vite
@@ -108,6 +106,8 @@ Why did I create this:
 * Instead of doing the same steps over and over its easy to use a boilerplate
 
 May not satisfy all of your initial needs but the boilerplate can be adapted to your project.  Feel free to fork the project and adapt it to use in your one library.
+
+![react vite django files screenshot](/images/reactvitedjangofiles.png "Boilerplate FIles")
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
