@@ -1,4 +1,3 @@
-
 <a name="readme-top"></a>
 
 
@@ -13,8 +12,6 @@
 
   <p align="center">
     Jumpstart your React Django Fullstack Projects
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://gitlab.com/johnbjr76/react_vite_django_template/-/issues">Report Bug</a>
