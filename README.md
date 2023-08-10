@@ -114,11 +114,11 @@ Install Docker
    ```sh
    git clone https://gitlab.com/johnbjr76/react_vite_django_template.git
    ```
-3. Build the Docker images
+2. Build the Docker images
    ```sh
    docker-compose build
    ```
-4. Start the Docker containers
+3. Start the Docker containers
    ```sh
    docker-compose up
    ```
